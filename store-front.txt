@@ -1,0 +1,38 @@
+# Include the Customer and Item classes here.
+class Item:
+
+    def __init__(self, init_itemname, init_price, init_inventory):
+        self.itemname = str(init_itemname)
+        self.price = float(init_price)
+        self.inventory = int(init_inventory)
+
+class Customer:
+
+    def __init__(self, init_memnum, init_name, init_birthday)
+        self.memnum = int(init_memnum)
+        self.name = str(init_name)
+        self.birthday = str(init_birthday)
+
+members = [
+  Customer(1, 'Harry', 'July 31, 1980'),
+  Customer(2, 'Ken', 'July 3, 1988')
+]
+
+items = [
+  Item('Python Textbook', 13.99, 20),
+  Item('MacBook', 1199.99, 15),
+  Item('Extended Warranty', 49.99, 12)
+]
+
+# Order in this case will be a dictionary. This allows us to add items multiple times.
+# Example: I add 3 items of the MacBook, then I add 1 item of the MacBook. The order will now contain 4 items of the Macbok
+order = {}
+
+def main():
+    memnum = input('''Welcome to my store!
+    
+    What is your member number?''')
+  pass
+
+if __name__ == "__main__":
+    main()
